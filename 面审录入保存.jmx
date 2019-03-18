@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="3.2" jmeter="3.3 r1808647">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="risk" enabled="true">
+      <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.1.1.312. Please contact support@blazemeter.com for further support.</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV xm" enabled="true">
+        <stringProp name="filename">D:\name.txt</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">xm</stringProp>
+        <boolProp name="ignoreFirstLine">false</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV peiouzj" enabled="true">
+        <stringProp name="filename">D:\peiou.txt</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">peiouzj</stringProp>
+        <boolProp name="ignoreFirstLine">false</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV zjh,dizhi,phone" enabled="true">
+        <stringProp name="filename">D:\test.txt</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">zjh,dizhi,phone</stringProp>
+        <boolProp name="ignoreFirstLine">false</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV user,pass" enabled="true">
+        <stringProp name="filename">D:\user.txt</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">user,pass</stringProp>
+        <boolProp name="ignoreFirstLine">false</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="BASE_URL_1" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_1</stringProp>
+            <stringProp name="Argument.value">riskcontrol.ejie365.cn</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_2" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_2</stringProp>
+            <stringProp name="Argument.value">sso.ejie365.cn</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.protocol"></stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <boolProp name="HTTPSampler.image_parser">true</boolProp>
+        <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
+        <collectionProp name="DNSCacheManager.servers"/>
+        <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
+        <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
+      </DNSCacheManager>
+      <hashTree/>
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+        <collectionProp name="AuthManager.auth_list"/>
+      </AuthManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies">
+          <elementProp name="token" elementType="Cookie" testname="token">
+            <stringProp name="Cookie.value">${__property(newtoken)}</stringProp>
+            <stringProp name="Cookie.domain">${BASE_URL_2}</stringProp>
+            <stringProp name="Cookie.path"></stringProp>
+            <boolProp name="Cookie.secure">false</boolProp>
+            <longProp name="Cookie.expires">0</longProp>
+            <boolProp name="Cookie.path_specified">true</boolProp>
+            <boolProp name="Cookie.domain_specified">true</boolProp>
+          </elementProp>
+        </collectionProp>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+        <boolProp name="clearEachIteration">true</boolProp>
+        <boolProp name="useExpires">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">100</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1363247040000</longProp>
+        <longProp name="ThreadGroup.end_time">1363247040000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">0</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="首页" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">#/home</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="首页2" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="serviceUrl" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">serviceUrl</stringProp>
+                <stringProp name="Argument.value">http://riskcontrole.ejie365.cn/</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">login.jsp</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://riskcontrole.ejie365.cn/</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="验证码" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"> {&quot;checkcode&quot;:&quot;1234&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">checkCode</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/javascript, */*; q=0.01</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://sso.ejie365.cn</stringProp>
+              </elementProp>
+              <elementProp name="X-Requested-With" elementType="Header">
+                <stringProp name="Header.name">X-Requested-With</stringProp>
+                <stringProp name="Header.value">XMLHttpRequest</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://sso.ejie365.cn/login.jsp?serviceUrl=http://riskcontrole.ejie365.cn/</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"> {&quot;name&quot;:&quot;${user}&quot;,&quot;password&quot;:&quot;${pass}&quot;,&quot;isPhone&quot;:&quot;N&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">userLogin</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/javascript, */*; q=0.01</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://sso.ejie365.cn</stringProp>
+              </elementProp>
+              <elementProp name="X-Requested-With" elementType="Header">
+                <stringProp name="Header.name">X-Requested-With</stringProp>
+                <stringProp name="Header.value">XMLHttpRequest</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://sso.ejie365.cn/login.jsp?serviceUrl=http://riskcontrole.ejie365.cn/</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="提取token" enabled="true">
+            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+            <stringProp name="RegexExtractor.refname">token</stringProp>
+            <stringProp name="RegexExtractor.regex">&quot;token&quot;:&quot;(.*?)&quot;</stringProp>
+            <stringProp name="RegexExtractor.template">$1$</stringProp>
+            <stringProp name="RegexExtractor.default">null</stringProp>
+            <stringProp name="RegexExtractor.match_number">0</stringProp>
+          </RegexExtractor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="保存提交" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;attachMents&quot;: {},&#xd;
+  &quot;entity&quot;: {&#xd;
+    &quot;compreRates&quot;: [],&#xd;
+    &quot;product&quot;: &quot;0001000001&quot;,&#xd;
+    &quot;applyAmount&quot;: 100,&#xd;
+    &quot;repayMethod&quot;: &quot;0001100001&quot;,&#xd;
+    &quot;loanLimit&quot;: 12,&#xd;
+    &quot;repaySource&quot;: &quot;0001300001&quot;,&#xd;
+    &quot;repaySourceDetail&quot;: &quot;还款来源详情&quot;,&#xd;
+    &quot;loanDirection&quot;: &quot;0001400001&quot;,&#xd;
+    &quot;loanDirectionDetail&quot;: &quot;详细资金用途&quot;,&#xd;
+    &quot;compreRate&quot;: 12,&#xd;
+    &quot;faceTrialSuggestion&quot;: &quot;面审意见，面审意见，面审意见，面审意见，面审意见，面审意见，面审意见，面审意见。&quot;&#xd;
+  },&#xd;
+  &quot;guarantyList&quot;: [],&#xd;
+  &quot;borrowerDetailList&quot;: [&#xd;
+    {&#xd;
+      &quot;attachMents&quot;: {},&#xd;
+      &quot;ejieBorrower&quot;: {&#xd;
+        &quot;type&quot;: 1,&#xd;
+        &quot;inputFlow&quot;: &quot;0010600001&quot;,&#xd;
+        &quot;birthday&quot;: &quot;1985-12-31T16:00:00.000Z&quot;,&#xd;
+        &quot;name&quot;: &quot;${xm}&quot;,&#xd;
+        &quot;sex&quot;: 1,&#xd;
+        &quot;idNo&quot;: &quot;${zjh}&quot;,&#xd;
+        &quot;telephone&quot;: &quot;${phone}&quot;,&#xd;
+        &quot;education&quot;: &quot;0000500006&quot;,&#xd;
+        &quot;maritalStatus&quot;: &quot;0000700002&quot;,&#xd;
+        &quot;maritalDate&quot;: &quot;2005-05-31T16:00:00.000Z&quot;,&#xd;
+        &quot;profession&quot;: &quot;0000800001&quot;,&#xd;
+        &quot;nation&quot;: &quot;0000600001&quot;,&#xd;
+        &quot;addressProvinceCode&quot;: 510000,&#xd;
+        &quot;addressCityCode&quot;: 510100,&#xd;
+        &quot;addressAreaCode&quot;: 510104,&#xd;
+        &quot;addressSummary&quot;: &quot;四川省-成都市-锦江区&quot;,&#xd;
+        &quot;addressDetail&quot;: &quot;${dizhi}&quot;,&#xd;
+        &quot;registeType&quot;: &quot;0000900003&quot;,&#xd;
+        &quot;registeProvinceCode&quot;: 510000,&#xd;
+        &quot;registeCityCode&quot;: 510100,&#xd;
+        &quot;registeAreaCode&quot;: 510104,&#xd;
+        &quot;registeSummary&quot;: &quot;四川省-成都市-锦江区&quot;,&#xd;
+        &quot;registeDetail&quot;: &quot;${dizhi}&quot;,&#xd;
+        &quot;loanBankCardNumber&quot;: &quot;6214839911633337&quot;,&#xd;
+        &quot;loanBankCode&quot;: &quot;308&quot;,&#xd;
+        &quot;loanBankUser&quot;: &quot;${xm}&quot;,&#xd;
+        &quot;loanBankBranch&quot;: &quot;春熙之行&quot;,&#xd;
+        &quot;loanBankUserIdno&quot;: &quot;${zjh}&quot;,&#xd;
+        &quot;loanBankTelephone&quot;: &quot;${phone}&quot;,&#xd;
+        &quot;backBankCardNumber&quot;: &quot;6214839911633337&quot;,&#xd;
+        &quot;backBankCode&quot;: &quot;308&quot;,&#xd;
+        &quot;backBankUser&quot;: &quot;${xm}&quot;,&#xd;
+        &quot;backBankUserIdno&quot;: &quot;${zjh}&quot;,&#xd;
+        &quot;backBankTelephone&quot;: &quot;${phone}&quot;,&#xd;
+        &quot;backBankBranch&quot;: &quot;春熙之行&quot;&#xd;
+      },&#xd;
+      &quot;contacterList&quot;: [&#xd;
+        {&#xd;
+          &quot;name&quot;: &quot;联系人一&quot;,&#xd;
+          &quot;relationShip&quot;: &quot;0001700001&quot;,&#xd;
+          &quot;company&quot;: &quot;易捷&quot;,&#xd;
+          &quot;telephone&quot;: &quot;18693080064&quot;,&#xd;
+          &quot;knowLoan&quot;: 1&#xd;
+        },&#xd;
+        {&#xd;
+          &quot;name&quot;: &quot;联系人二&quot;,&#xd;
+          &quot;telephone&quot;: &quot;18693080064&quot;,&#xd;
+          &quot;relationShip&quot;: &quot;0001700002&quot;,&#xd;
+          &quot;company&quot;: &quot;易捷二&quot;&#xd;
+        },&#xd;
+        {&#xd;
+          &quot;name&quot;: &quot;联系人三&quot;,&#xd;
+          &quot;telephone&quot;: &quot;18693080066&quot;,&#xd;
+          &quot;relationShip&quot;: &quot;0001700007&quot;,&#xd;
+          &quot;company&quot;: &quot;易捷三&quot;,&#xd;
+          &quot;knowLoan&quot;: 1&#xd;
+        }&#xd;
+      ],&#xd;
+      &quot;borrowerJobList&quot;: [&#xd;
+        {&#xd;
+          &quot;profession&quot;: &quot;0000800001&quot;,&#xd;
+          &quot;sendFlag&quot;: 1,&#xd;
+          &quot;oldProfession&quot;: &quot;0000800001&quot;,&#xd;
+          &quot;occupationType&quot;: &quot;0003000001&quot;,&#xd;
+          &quot;workYear&quot;: &quot;0003900003&quot;,&#xd;
+          &quot;monthIncome&quot;: &quot;0004000004&quot;,&#xd;
+          &quot;company&quot;: &quot;工作单位名称一&quot;,&#xd;
+          &quot;companyTelephone&quot;: &quot;18693080645&quot;,&#xd;
+          &quot;rank&quot;: &quot;0003800001&quot;,&#xd;
+          &quot;rankDetail&quot;: &quot;职级其他&quot;,&#xd;
+          &quot;addressProvinceCode&quot;: 510000,&#xd;
+          &quot;addressCityCode&quot;: 510100,&#xd;
+          &quot;addressAreaCode&quot;: 510104,&#xd;
+          &quot;addressSummary&quot;: &quot;四川省-成都市-锦江区&quot;,&#xd;
+          &quot;addressDetail&quot;: &quot;${dizhi}&quot;,&#xd;
+          &quot;socialSecurity&quot;: 1,&#xd;
+          &quot;accumulationFund&quot;: 1,&#xd;
+          &quot;remark&quot;: &quot;工作单位说明&quot;&#xd;
+        },&#xd;
+        {&#xd;
+          &quot;profession&quot;: &quot;0000800001&quot;,&#xd;
+          &quot;sendFlag&quot;: 0,&#xd;
+          &quot;oldProfession&quot;: &quot;0000800001&quot;,&#xd;
+          &quot;occupationType&quot;: &quot;0003000001&quot;,&#xd;
+          &quot;workYear&quot;: &quot;0003900004&quot;,&#xd;
+          &quot;monthIncome&quot;: &quot;0004000003&quot;,&#xd;
+          &quot;company&quot;: &quot;工作单位名称二&quot;,&#xd;
+          &quot;companyTelephone&quot;: &quot;18693080645&quot;,&#xd;
+          &quot;rank&quot;: &quot;0003800001&quot;,&#xd;
+          &quot;rankDetail&quot;: &quot;职级其他&quot;,&#xd;
+          &quot;addressProvinceCode&quot;: 510000,&#xd;
+          &quot;addressCityCode&quot;: 510100,&#xd;
+          &quot;addressAreaCode&quot;: 510104,&#xd;
+          &quot;addressSummary&quot;: &quot;四川省-成都市-锦江区&quot;,&#xd;
+          &quot;addressDetail&quot;: &quot;${dizhi}&quot;,&#xd;
+          &quot;socialSecurity&quot;: 1,&#xd;
+          &quot;accumulationFund&quot;: 1,&#xd;
+          &quot;remark&quot;: &quot;工作单位名称二&quot;&#xd;
+        }&#xd;
+      ],&#xd;
+      &quot;assetList&quot;: []&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;attachMents&quot;: {},&#xd;
+      &quot;ejieBorrower&quot;: {&#xd;
+        &quot;type&quot;: 2,&#xd;
+        &quot;propertiy&quot;: 1,&#xd;
+        &quot;inputFlow&quot;: &quot;0010600001&quot;,&#xd;
+        &quot;oldPropertiy&quot;: 1,&#xd;
+        &quot;birthday&quot;: &quot;1980-01-01&quot;,&#xd;
+        &quot;relationShip&quot;: &quot;0001700005&quot;,&#xd;
+        &quot;shareReason&quot;: &quot;0002300005&quot;,&#xd;
+        &quot;shareReasonDetail&quot;: &quot;配偶共借其他信息&quot;,&#xd;
+        &quot;name&quot;: &quot;配偶姓名&quot;,&#xd;
+        &quot;sex&quot;: 2,&#xd;
+        &quot;idNo&quot;: &quot;${peiouzj}&quot;,&#xd;
+        &quot;telephone&quot;: &quot;17621032204&quot;,&#xd;
+        &quot;education&quot;: &quot;0000500006&quot;,&#xd;
+        &quot;maritalStatus&quot;: &quot;0000700002&quot;,&#xd;
+        &quot;maritalDate&quot;: &quot;2005-05-31T16:00:00.000Z&quot;,&#xd;
+        &quot;profession&quot;: &quot;0000800001&quot;,&#xd;
+        &quot;nation&quot;: &quot;0000600001&quot;,&#xd;
+        &quot;addressProvinceCode&quot;: 510000,&#xd;
+        &quot;addressCityCode&quot;: 510100,&#xd;
+        &quot;addressAreaCode&quot;: 510104,&#xd;
+        &quot;addressSummary&quot;: &quot;四川省-成都市-锦江区&quot;,&#xd;
+        &quot;addressDetail&quot;: &quot;常驻地址详细&quot;,&#xd;
+        &quot;registeType&quot;: &quot;0000900003&quot;,&#xd;
+        &quot;registeProvinceCode&quot;: 510000,&#xd;
+        &quot;registeCityCode&quot;: 510100,&#xd;
+        &quot;registeAreaCode&quot;: 510104,&#xd;
+        &quot;registeSummary&quot;: &quot;四川省-成都市-锦江区&quot;,&#xd;
+        &quot;registeDetail&quot;: &quot;户籍地址详细&quot;,&#xd;
+        &quot;loanBankCardNumber&quot;: &quot;6227004331110222815&quot;,&#xd;
+        &quot;loanBankCode&quot;: &quot;105&quot;,&#xd;
+        &quot;loanBankUser&quot;: &quot;共借人卡人姓名&quot;,&#xd;
+        &quot;loanBankBranch&quot;: &quot;春熙支行&quot;,&#xd;
+        &quot;loanBankUserIdno&quot;: &quot;${peiouzj}&quot;,&#xd;
+        &quot;backBankCardNumber&quot;: &quot;6227004331110222815&quot;,&#xd;
+        &quot;backBankCode&quot;: &quot;105&quot;,&#xd;
+        &quot;backBankUser&quot;: &quot;共借人卡人姓名&quot;,&#xd;
+        &quot;backBankUserIdno&quot;: &quot;${peiouzj}&quot;,&#xd;
+        &quot;loanBankTelephone&quot;: &quot;17621032205&quot;,&#xd;
+        &quot;backBankTelephone&quot;: &quot;17621032205&quot;,&#xd;
+        &quot;backBankBranch&quot;: &quot;春熙支行&quot;&#xd;
+      },&#xd;
+      &quot;borrowerJobList&quot;: []&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;attachMents&quot;: {},&#xd;
+      &quot;ejieBorrower&quot;: {&#xd;
+        &quot;type&quot;: 2,&#xd;
+        &quot;propertiy&quot;: 1,&#xd;
+        &quot;inputFlow&quot;: &quot;0010600001&quot;,&#xd;
+        &quot;oldPropertiy&quot;: 1,&#xd;
+        &quot;birthday&quot;: &quot;1986-01-01&quot;,&#xd;
+        &quot;relationShip&quot;: &quot;0001700001&quot;,&#xd;
+        &quot;shareReason&quot;: &quot;0002300001&quot;,&#xd;
+        &quot;shareReasonDetail&quot;: &quot;共借原因其他&quot;,&#xd;
+        &quot;name&quot;: &quot;共借人姓名&quot;,&#xd;
+        &quot;sex&quot;: 1,&#xd;
+        &quot;idNo&quot;: &quot;510104198601013673&quot;,&#xd;
+        &quot;telephone&quot;: &quot;17621032205&quot;,&#xd;
+        &quot;education&quot;: &quot;0000500006&quot;,&#xd;
+        &quot;maritalStatus&quot;: &quot;0000700002&quot;,&#xd;
+        &quot;maritalDate&quot;: &quot;2006-05-31T16:00:00.000Z&quot;,&#xd;
+        &quot;profession&quot;: &quot;0000800001&quot;,&#xd;
+        &quot;nation&quot;: &quot;0000600001&quot;,&#xd;
+        &quot;addressProvinceCode&quot;: 510000,&#xd;
+        &quot;addressCityCode&quot;: 510100,&#xd;
+        &quot;addressAreaCode&quot;: 510104,&#xd;
+        &quot;addressSummary&quot;: &quot;四川省-成都市-锦江区&quot;,&#xd;
+        &quot;addressDetail&quot;: &quot;常驻地址详细&quot;,&#xd;
+        &quot;registeType&quot;: &quot;0000900002&quot;,&#xd;
+        &quot;registeProvinceCode&quot;: 510000,&#xd;
+        &quot;registeCityCode&quot;: 510100,&#xd;
+        &quot;registeAreaCode&quot;: 510104,&#xd;
+        &quot;registeSummary&quot;: &quot;四川省-成都市-锦江区&quot;,&#xd;
+        &quot;registeDetail&quot;: &quot;共借人户籍地址详细&quot;,&#xd;
+        &quot;loanBankCardNumber&quot;: &quot;6227004331110222815&quot;,&#xd;
+        &quot;loanBankCode&quot;: &quot;105&quot;,&#xd;
+        &quot;loanBankUser&quot;: &quot;共借人卡人姓名&quot;,&#xd;
+        &quot;loanBankUserIdno&quot;: &quot;510104198601013673&quot;,&#xd;
+        &quot;loanBankTelephone&quot;: &quot;17621032208&quot;,&#xd;
+        &quot;loanBankBranch&quot;: &quot;春熙支行&quot;,&#xd;
+        &quot;backBankCardNumber&quot;: &quot;6227004331110222815&quot;,&#xd;
+        &quot;backBankCode&quot;: &quot;105&quot;,&#xd;
+        &quot;backBankUser&quot;: &quot;共借人卡人姓名&quot;,&#xd;
+        &quot;backBankUserIdno&quot;: &quot;510104198601013673&quot;,&#xd;
+        &quot;backBankTelephone&quot;: &quot;17621032208&quot;,&#xd;
+        &quot;backBankBranch&quot;: &quot;春熙支行&quot;&#xd;
+      },&#xd;
+      &quot;borrowerJobList&quot;: [&#xd;
+        {&#xd;
+          &quot;profession&quot;: &quot;0000800001&quot;,&#xd;
+          &quot;sendFlag&quot;: 1,&#xd;
+          &quot;oldProfession&quot;: &quot;0000800001&quot;,&#xd;
+          &quot;occupationType&quot;: &quot;0003000001&quot;,&#xd;
+          &quot;workYear&quot;: &quot;0003900003&quot;,&#xd;
+          &quot;monthIncome&quot;: &quot;0004000003&quot;,&#xd;
+          &quot;company&quot;: &quot;易捷金融&quot;,&#xd;
+          &quot;companyTelephone&quot;: &quot;18693080645&quot;,&#xd;
+          &quot;rank&quot;: &quot;0003800001&quot;,&#xd;
+          &quot;rankDetail&quot;: &quot;职级其他&quot;,&#xd;
+          &quot;addressProvinceCode&quot;: 510000,&#xd;
+          &quot;addressCityCode&quot;: 510100,&#xd;
+          &quot;addressAreaCode&quot;: 510104,&#xd;
+          &quot;addressSummary&quot;: &quot;四川省-成都市-锦江区&quot;,&#xd;
+          &quot;addressDetail&quot;: &quot;单位地址详细${dizhi}&quot;,&#xd;
+          &quot;socialSecurity&quot;: 1,&#xd;
+          &quot;accumulationFund&quot;: 1,&#xd;
+          &quot;remark&quot;: &quot;工作信息说明&quot;&#xd;
+        }&#xd;
+      ]&#xd;
+    }&#xd;
+  ]&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+          <stringProp name="HTTPSampler.port">8000</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path">internal/apply/save</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://riskcontrole.ejie365.cn</stringProp>
+              </elementProp>
+              <elementProp name="token" elementType="Header">
+                <stringProp name="Header.name">token</stringProp>
+                <stringProp name="Header.value">${token}</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://riskcontrole.ejie365.cn/</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://riskcontrole.ejie365.cn/internal/applys" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;nextPage&quot;:1,&quot;pageLimit&quot;:30,&quot;cnd&quot;:{&quot;fileNumber&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;idNo&quot;:&quot;&quot;,&quot;concatMethod&quot;:&quot;&quot;,&quot;product&quot;:&quot;&quot;,&quot;faceTrialName&quot;:&quot;&quot;,&quot;stime&quot;:&quot;&quot;,&quot;etime&quot;:&quot;&quot;,&quot;flag&quot;:0}}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+          <stringProp name="HTTPSampler.port">8000</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">internal/applys</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://riskcontrole.ejie365.cn</stringProp>
+              </elementProp>
+              <elementProp name="token" elementType="Header">
+                <stringProp name="Header.name">token</stringProp>
+                <stringProp name="Header.value">${token}</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://riskcontrole.ejie365.cn/</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://riskcontrole.ejie365.cn/internal/applys" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;nextPage&quot;:1,&quot;pageLimit&quot;:30,&quot;cnd&quot;:{&quot;fileNumber&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;idNo&quot;:&quot;&quot;,&quot;concatMethod&quot;:&quot;&quot;,&quot;product&quot;:&quot;&quot;,&quot;faceTrialName&quot;:&quot;&quot;,&quot;stime&quot;:&quot;&quot;,&quot;etime&quot;:&quot;&quot;,&quot;flag&quot;:1}}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+          <stringProp name="HTTPSampler.port">8000</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">internal/applys</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://riskcontrole.ejie365.cn</stringProp>
+              </elementProp>
+              <elementProp name="token" elementType="Header">
+                <stringProp name="Header.name">token</stringProp>
+                <stringProp name="Header.value">${token}</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://riskcontrole.ejie365.cn/</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="察看结果树" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="工作台" enabled="true">
+      <boolProp name="WorkBench.save">true</boolProp>
+    </WorkBench>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>

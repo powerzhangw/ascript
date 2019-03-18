@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="3.2" jmeter="3.3 r1808647">
+  <hashTree>
+    <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="提取token" enabled="true">
+      <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+      <stringProp name="RegexExtractor.refname">token</stringProp>
+      <stringProp name="RegexExtractor.regex">&quot;token&quot;:&quot;(.*?)&quot;</stringProp>
+      <stringProp name="RegexExtractor.template">$1$</stringProp>
+      <stringProp name="RegexExtractor.default">null</stringProp>
+      <stringProp name="RegexExtractor.match_number">0</stringProp>
+    </RegexExtractor>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>

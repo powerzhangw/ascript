@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="3.1" jmeter="3.1 r1770033">
+  <hashTree>
+    <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request" enabled="true">
+      <stringProp name="dataSource">36.155</stringProp>
+      <stringProp name="query">select * from admin_user where id = ${id}</stringProp>
+      <stringProp name="queryArguments"></stringProp>
+      <stringProp name="queryArgumentsTypes"></stringProp>
+      <stringProp name="queryType">Select Statement</stringProp>
+      <stringProp name="resultVariable">rs</stringProp>
+      <stringProp name="variableNames">a,b,c</stringProp>
+      <stringProp name="queryTimeout"></stringProp>
+      <stringProp name="resultSetHandler">Store as String</stringProp>
+    </JDBCSampler>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>
