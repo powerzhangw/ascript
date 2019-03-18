@@ -1,1 +1,2 @@
-#ascript  
+#ascript
+脚本
