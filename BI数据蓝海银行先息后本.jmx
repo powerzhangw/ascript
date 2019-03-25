@@ -3512,7 +3512,7 @@ WHERE
 			&quot;capitalProduct&quot;: &quot;&quot;,&#xd;
 			&quot;productName&quot;: &quot;&quot;&#xd;
 		}],&#xd;
-		&quot;compreRate&quot;: 0.69,&#xd;
+		&quot;compreRate&quot;: 0.84,&#xd;
 		&quot;compreRates&quot;: [],&#xd;
 		&quot;conclusion&quot;: 4,&#xd;
 		&quot;conclusionDetail&quot;: &quot;发起审贷会发起审贷会发起审贷会发起审贷会发起审贷会发起审贷会&quot;,&#xd;
@@ -3602,7 +3602,7 @@ WHERE
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="事业部审批发起审贷会 - 外贸信托 等额本息 19" enabled="false">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="事业部审批发起审贷会 - 外贸信托 等额本息 19" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -3614,9 +3614,9 @@ WHERE
 		&quot;applyId&quot;: &quot;${applyId}&quot;,&#xd;
 		&quot;approvalId&quot;: &quot;&quot;,&#xd;
 		&quot;approvalStep&quot;: 1,&#xd;
-		&quot;capitalProduct&quot;: &quot;0010800017&quot;,&#xd;
-		&quot;capitalProductName&quot;: &quot;外贸信托/12期/10.200000%/等额本息/##/北京，上海用/&quot;,&#xd;
-		&quot;capitalType&quot;: &quot;3&quot;,&#xd;
+		&quot;capitalProduct&quot;: &quot;0010800449&quot;,&#xd;
+		&quot;capitalProductName&quot;: &quot;蓝海银行（直投）/3期/9.000000%/先息后本/##/青岛限定/&quot;,&#xd;
+		&quot;capitalType&quot;: &quot;1&quot;,&#xd;
 		&quot;comboDetail&quot;: [{&#xd;
 			&quot;amount&quot;: 0,&#xd;
 			&quot;realServiceLimit&quot;: &quot;&quot;,&#xd;
@@ -3657,18 +3657,18 @@ WHERE
 			&quot;capitalProduct&quot;: &quot;&quot;,&#xd;
 			&quot;productName&quot;: &quot;&quot;&#xd;
 		}],&#xd;
-		&quot;compreRate&quot;: 0.69,&#xd;
+		&quot;compreRate&quot;: 8.4,&#xd;
 		&quot;compreRates&quot;: [],&#xd;
 		&quot;conclusion&quot;: 1,&#xd;
-		&quot;conclusionDetail&quot;: &quot;审贷会审批&quot;,&#xd;
-		&quot;fundChannel&quot;: &quot;0009800003&quot;,&#xd;
+		&quot;conclusionDetail&quot;: &quot;发起审贷会发起审贷会发起审贷会发起审贷会发起审贷会发起审贷会&quot;,&#xd;
+		&quot;fundChannel&quot;: &quot;0009800027&quot;,&#xd;
 		&quot;loanIntention&quot;: &quot;&quot;,&#xd;
 		&quot;loanLimit&quot;: 12,&#xd;
 		&quot;loanType&quot;: &quot;0010000001&quot;,&#xd;
 		&quot;rate&quot;: 0,&#xd;
 		&quot;realServiceLimit&quot;: 0,&#xd;
-		&quot;repayMethod&quot;: &quot;0001100001&quot;,&#xd;
-		&quot;serviceLimit&quot;: 0,&#xd;
+		&quot;repayMethod&quot;: &quot;0001100003&quot;,&#xd;
+		&quot;serviceLimit&quot;: &quot;12&quot;,&#xd;
 		&quot;virtualAmount&quot;: 0,&#xd;
 		&quot;yearRate&quot;: 0.102,&#xd;
 		&quot;isStart&quot;: false,&#xd;
@@ -3708,7 +3708,7 @@ WHERE
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="发送至合规" enabled="false">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="发送至合规" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">

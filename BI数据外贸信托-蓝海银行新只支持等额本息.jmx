@@ -11,7 +11,7 @@
       <stringProp name="TestPlan.user_define_classpath">D:\apache-jmeter-5.0\lib\mysql-connector-java-5.1.7-bin.jar</stringProp>
     </TestPlan>
     <hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="外贸信托蓝海银行新等额本息" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="外贸信托蓝海银行新等额本息" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -3739,7 +3739,7 @@ WHERE
 //System.out.println(&quot;${__V(sex_${count7},)}&quot;);
 //System.out.println(&quot;${__V(hunyin_${count8},)}&quot;);
 //System.out.println(&quot;${__V(zifang_${count9},)}&quot;);
-System.out.println(&quot;${__V(YJCD,${fileNumber})&quot;);
+System.out.println(&quot;${fileNumber})&quot;);
 </stringProp>
           <stringProp name="BeanShellSampler.filename"></stringProp>
           <stringProp name="BeanShellSampler.parameters"></stringProp>
@@ -4080,7 +4080,7 @@ System.out.println(&quot;${__V(YJCD,${fileNumber})&quot;);
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="dbtest" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="dbtest" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -4198,7 +4198,7 @@ System.out.println(&quot;${__V(YJCD,${fileNumber})&quot;);
           </IfController>
           <hashTree>
             <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell 取样器" enabled="true">
-              <stringProp name="BeanShellSampler.query">System.out.println(&quot;周杰伦${__V(nature_${count},)}&quot;)</stringProp>
+              <stringProp name="BeanShellSampler.query">System.out.println(&quot;王力宏${__V(nature_${count},)}&quot;)</stringProp>
               <stringProp name="BeanShellSampler.filename"></stringProp>
               <stringProp name="BeanShellSampler.parameters"></stringProp>
               <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
@@ -4211,7 +4211,7 @@ System.out.println(&quot;${__V(YJCD,${fileNumber})&quot;);
           </IfController>
           <hashTree>
             <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell 取样器" enabled="true">
-              <stringProp name="BeanShellSampler.query">System.out.println(&quot;王力宏&quot;)</stringProp>
+              <stringProp name="BeanShellSampler.query">System.out.println(&quot;周杰伦&quot;)</stringProp>
               <stringProp name="BeanShellSampler.filename"></stringProp>
               <stringProp name="BeanShellSampler.parameters"></stringProp>
               <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>

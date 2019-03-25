@@ -11,7 +11,7 @@
       <stringProp name="TestPlan.user_define_classpath">D:\apache-jmeter-5.0\lib\mysql-connector-java-5.1.7-bin.jar</stringProp>
     </TestPlan>
     <hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="面审录入" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="风控至合规" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -3602,7 +3602,7 @@ WHERE
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="事业部审批发起审贷会 - 外贸信托 等额本息 19" enabled="false">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="事业部审批发起审贷会 - 外贸信托 等额本息 19" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -3614,9 +3614,9 @@ WHERE
 		&quot;applyId&quot;: &quot;${applyId}&quot;,&#xd;
 		&quot;approvalId&quot;: &quot;&quot;,&#xd;
 		&quot;approvalStep&quot;: 1,&#xd;
-		&quot;capitalProduct&quot;: &quot;0010800017&quot;,&#xd;
-		&quot;capitalProductName&quot;: &quot;外贸信托/12期/10.200000%/等额本息/##/北京，上海用/&quot;,&#xd;
-		&quot;capitalType&quot;: &quot;3&quot;,&#xd;
+		&quot;capitalProduct&quot;: &quot;0010800271&quot;,&#xd;
+		&quot;capitalProductName&quot;: &quot;龙信小贷/14期/12.000000%/等额本息/##/##/&quot;,&#xd;
+		&quot;capitalType&quot;: &quot;8&quot;,&#xd;
 		&quot;comboDetail&quot;: [{&#xd;
 			&quot;amount&quot;: 0,&#xd;
 			&quot;realServiceLimit&quot;: &quot;&quot;,&#xd;
@@ -3657,11 +3657,11 @@ WHERE
 			&quot;capitalProduct&quot;: &quot;&quot;,&#xd;
 			&quot;productName&quot;: &quot;&quot;&#xd;
 		}],&#xd;
-		&quot;compreRate&quot;: 0.69,&#xd;
+		&quot;compreRate&quot;: 0.84,&#xd;
 		&quot;compreRates&quot;: [],&#xd;
 		&quot;conclusion&quot;: 1,&#xd;
-		&quot;conclusionDetail&quot;: &quot;审贷会审批&quot;,&#xd;
-		&quot;fundChannel&quot;: &quot;0009800003&quot;,&#xd;
+		&quot;conclusionDetail&quot;: &quot;发起审贷会发起审贷会发起审贷会发起审贷会发起审贷会发起审贷会&quot;,&#xd;
+		&quot;fundChannel&quot;: &quot;0009800015&quot;,&#xd;
 		&quot;loanIntention&quot;: &quot;&quot;,&#xd;
 		&quot;loanLimit&quot;: 12,&#xd;
 		&quot;loanType&quot;: &quot;0010000001&quot;,&#xd;
@@ -3708,7 +3708,7 @@ WHERE
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="发送至合规" enabled="false">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="发送至合规" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
